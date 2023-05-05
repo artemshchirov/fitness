@@ -101,11 +101,6 @@ class SportsWalking(Training):
         super().__init__(action, duration, weight)
         self.height = height
 
-    def get_mean_speed(self) -> float:
-        distance = self.get_distance()
-
-        return distance / (self.duration * 60 * 60)
-
     def get_burned_calories(self) -> float:
         mean_speed = self.get_mean_speed()
         burned_calories = ((self.CALORIES_MEAN_SPEED_MULTIPLIER * self.weight

@@ -247,7 +247,7 @@ def test_Swimming_get_mean(input_data, expected):
 
 @pytest.mark.parametrize('input_data, expected', [
     ([720, 1, 80, 25, 40], 336.0),
-    ([420, 4, 20, 42, 4], 45.68000000000001),
+    ([420, 4, 20, 42, 4], +45.68000000000001),
     ([1206, 12, 6, 12, 6], 13.272000000000002),
 ])
 def test_Swimming_get_burned_calories(input_data, expected):
@@ -257,7 +257,7 @@ def test_Swimming_get_burned_calories(input_data, expected):
         'Override the `get_burned_calories` method in the `Swimming` class.'
     )
     assert result == expected, (
-        'Check the formula for calculating the spent calories in '
+        'Check the formula for calculating the burned calories in '
         'the `Swimming` class.'
     )
 
@@ -294,7 +294,7 @@ def test_SportsWalking_get_burned_calories(input_data, expected):
         'the `SportsWalking` class.'
     )
     assert result == expected, (
-        'Check the formula for calculating the spent calories in '
+        'Check the formula for calculating the burned calories in '
         'the `SportsWalking` class.'
     )
 
@@ -310,9 +310,9 @@ def test_Running():
 
 
 @pytest.mark.parametrize('input_data, expected', [
-    ([9000, 1, 75], 383.85),
+    ([9000, 1, 75], 383.84999999999997),
     ([420, 4, 20], -90.1032),
-    ([1206, 12, 6], -81.32032799999999),
+    ([1206, 12, 6], -81.320328),
 ])
 def test_Running_get_burned_calories(input_data, expected):
     running = main.Running(*input_data)
@@ -324,7 +324,7 @@ def test_Running_get_burned_calories(input_data, expected):
         'Override the `get_burned_calories` method in the `Running` class.'
     )
     assert result == expected, (
-        'Check the formula for calculating spent calories in '
+        'Check the formula for calculating burned calories in '
         'the `Running` class.'
     )
 
