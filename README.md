@@ -36,7 +36,7 @@ step * LEN_STEP / M_IN_KM
 distance / duration
 ```
 
-- `get_spent_calories()` - method returns the number of calories burned
+- `get_burned_calories()` - method returns the number of calories burned
 - `show_training_info()` - method returns an object of the message class
 
 ## Subclasses
@@ -55,7 +55,7 @@ Inherited properties
 
 Override method:
 
-- `get_spent_calories()` - method returns the number of calories burned
+- `get_burned_calories()` - method returns the number of calories burned
 
 ```python
 # calculation formula
@@ -80,7 +80,7 @@ Added properties:
 
 Override method:
 
-- `get_spent_calories()` - method returns the number of calories burned
+- `get_burned_calories()` - method returns the number of calories burned
 
 ```python
 # calculation formula
@@ -113,7 +113,7 @@ Override method:
 pool_length * count_pool / M_IN_KM / workout_time
 ```
 
-- `get_spent_calories()` - method returns the number of calories burned.
+- `get_burned_calories()` - method returns the number of calories burned.
 
 ```python
 # формула расчета

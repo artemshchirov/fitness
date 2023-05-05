@@ -114,9 +114,9 @@ class SportsWalking(Training):
 class Swimming(Training):
     """Training: Swimming."""
 
-    LEN_STEP = 1.38
-    CALORIES_MEAN_SPEED_MULTIPLIER = 1.1
-    CALORIES_MEAN_SPEED_SHIFT = 2
+    LEN_STEP: float = 1.38
+    CALORIES_MEAN_SPEED_MULTIPLIER: float = 1.1
+    CALORIES_MEAN_SPEED_SHIFT: float = 2
 
     def __init__(self,
                  action: int,
